@@ -20,7 +20,7 @@ def inverter_string(s):
     return string_invertida
 
 # String de exemplo
-string_original = "Hello, world!"
+string_original = "Harpie"
 
 # Inverte a string
 string_invertida = inverter_string(string_original)
