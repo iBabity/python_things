@@ -1,0 +1,30 @@
+def inverter_string(s):
+    # Converte a string para uma lista de caracteres
+    caracteres = list(s)
+    
+    # Obtém o índice do primeiro e do último caractere
+    inicio = 0
+    fim = len(caracteres) - 1
+    
+    # Loop para trocar os caracteres
+    while inicio < fim:
+        # Troca os caracteres de posição
+        caracteres[inicio], caracteres[fim] = caracteres[fim], caracteres[inicio]
+        # Move os índices para o próximo caractere
+        inicio += 1
+        fim -= 1
+    
+    # Converte a lista de caracteres de volta para uma string
+    string_invertida = ''.join(caracteres)
+    
+    return string_invertida
+
+# String de exemplo
+string_original = "Hello, world!"
+
+# Inverte a string
+string_invertida = inverter_string(string_original)
+
+# Imprime a string invertida
+print("String original:", string_original)
+print("String invertida:", string_invertida)
